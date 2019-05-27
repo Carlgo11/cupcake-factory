@@ -86,7 +86,6 @@ a, a:link, a:visited, a:hover, a:active {
     font-family: 'Source Code Pro', sans-serif;
     font-weight: 300;
     font-size: 5em;
-    height: 1000px;
 }
 
 #div-two {
@@ -106,20 +105,36 @@ a, a:link, a:visited, a:hover, a:active {
     font-size: 2.5vh;
 }
 
-#img-one {
-    background-image: url('../img/backgrounds/cupcake-bg-3.webp'), url('../img/backgrounds/cupcake-bg-3.jpg');
+.no-webp #img-one{
+    background-image: url("../img/backgrounds/cupcake-bg-3.jpg");
 }
 
-#img-two {
-    background-image: url('../img/backgrounds/cupcake-bg-1.webp'), url('../img/backgrounds/cupcake-bg-1.jpg');
+.webp #img-one {
+    background-image: url("../img/backgrounds/cupcake-bg-3.webp");
 }
 
-#img-three {
-    background-image: url('../img/backgrounds/cupcake-bg-2.webp'), url('../img/backgrounds/cupcake-bg-2.jpg');
+.no-webp #img-two {
+    background-image: url('../img/backgrounds/cupcake-bg-1.jpg');
 }
 
-#img-four {
-    background-image: url('../img/backgrounds/cupcake-bg-4.webp'), url('../img/backgrounds/cupcake-bg-4.jpg');
+.webp #img-two {
+    background-image: url('../img/backgrounds/cupcake-bg-1.webp');
+}
+
+.no-webp #img-three {
+    background-image: url('../img/backgrounds/cupcake-bg-2.jpg');
+}
+
+.webp #img-three {
+background-image: url('../img/backgrounds/cupcake-bg-2.webp');
+}
+
+.no-webp #img-four {
+    background-image: url('../img/backgrounds/cupcake-bg-4.jpg');
+}
+
+.webp #img-four {
+    background-image: url('../img/backgrounds/cupcake-bg-4.webp');
 }
 
 #footer-outer {
@@ -133,7 +148,18 @@ a, a:link, a:visited, a:hover, a:active {
     text-align: center;
     font-family: 'Source Code Pro', sans-serif;
     font-size: 2em;
-    line-height: 0em !important;
+    line-height: 0 !important;
+    background-color: inherit;
+}
+
+#div-one-inner {
+    padding-top: unset !important;
+    font-family: 'Source Sans Pro', sans-serif, Arial;
+    font-weight: 100;
+    line-height: 0.9em;
+    font-size: 0.5em;
+    text-align: left;
+    padding-left: 7vh;
 }
 
 #scroll-btn:hover {
@@ -153,5 +179,11 @@ a, a:link, a:visited, a:hover, a:active {
 @media only screen and (max-device-width: 1366px) {
     .bg-div {
         background-attachment: scroll;
+    }
+}
+@media only screen and (min-device-width: 1366px) {
+    .inner-div, #div-one-inner{
+        padding-left: 7vh;
+        padding-right: 7vh;
     }
 }
