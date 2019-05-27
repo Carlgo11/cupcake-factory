@@ -60,10 +60,15 @@ a, a:link, a:visited, a:hover, a:active {
 
 .inner-div {
     padding-top: 7vh;
-    padding-left: 8vh;
+    /*padding-left: 8vh;*/
     color: white;
+    padding-bottom: 8vw;
 }
 
+#div-three-inner .column {
+    padding-left: 0;
+    padding-right: 0;
+}
 #title {
     text-transform: capitalize;
     font-family: 'Source Sans Pro', sans-serif, Arial;
@@ -89,7 +94,7 @@ a, a:link, a:visited, a:hover, a:active {
     clip-path: polygon(0 calc(0% + 4vw), 100% 0, 100% calc(100% - 4vw), 0 100%);
     margin-top: -4vw;
     margin-bottom: -4vw;
-    height: 700px;
+    /*height: 700px;*/
 }
 
 #div-three {
@@ -102,19 +107,19 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 #img-one {
-    background-image: url('../img/cupcake-bg-3.jpg');
+    background-image: url('../img/backgrounds/cupcake-bg-3.webp'), url('../img/backgrounds/cupcake-bg-3.jpg');
 }
 
 #img-two {
-    background-image: url('../img/cupcake-bg-1.jpeg');
+    background-image: url('../img/backgrounds/cupcake-bg-1.webp'), url('../img/backgrounds/cupcake-bg-1.jpg');
 }
 
 #img-three {
-    background-image: url('../img/cupcake-bg-2.jpg');
+    background-image: url('../img/backgrounds/cupcake-bg-2.webp'), url('../img/backgrounds/cupcake-bg-2.jpg');
 }
 
 #img-four {
-    background-image: url('../img/cupcake-bg-4.jpeg');
+    background-image: url('../img/backgrounds/cupcake-bg-4.webp'), url('../img/backgrounds/cupcake-bg-4.jpg');
 }
 
 #footer-outer {
