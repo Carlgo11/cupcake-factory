@@ -9,7 +9,7 @@ h1 {
     text-transform: capitalize;
     font-family: 'Source Sans Pro', sans-serif, Arial;
     font-weight: 300;
-    font-size: 4.7vw;
+    font-size: 8.6vh;
     color: antiquewhite;
     text-align: center;
 }
@@ -60,7 +60,6 @@ a, a:link, a:visited, a:hover, a:active {
 
 .inner-div {
     padding-top: 7vh;
-    /*padding-left: 8vh;*/
     color: white;
     padding-bottom: 8vw;
 }
@@ -69,11 +68,12 @@ a, a:link, a:visited, a:hover, a:active {
     padding-left: 0;
     padding-right: 0;
 }
+
 #title {
     text-transform: capitalize;
     font-family: 'Source Sans Pro', sans-serif, Arial;
     font-weight: 300;
-    font-size: 4.9vw;
+    font-size: 9.48vh;
     text-align: center;
 }
 
@@ -93,7 +93,6 @@ a, a:link, a:visited, a:hover, a:active {
     clip-path: polygon(0 calc(0% + 4vw), 100% 0, 100% calc(100% - 4vw), 0 100%);
     margin-top: -4vw;
     margin-bottom: -4vw;
-    /*height: 700px;*/
 }
 
 #div-three {
@@ -101,11 +100,11 @@ a, a:link, a:visited, a:hover, a:active {
     clip-path: polygon(0 calc(0% + 4vw), 100% 0, 100% calc(100% - 4vw), 0 100%);
     margin-top: -4vw;
     margin-bottom: -4vw;
-    height: 800px;
+    /*height: 800px;*/
     font-size: 2.5vh;
 }
 
-.no-webp #img-one{
+.no-webp #img-one {
     background-image: url("../img/backgrounds/cupcake-bg-3.jpg");
 }
 
@@ -114,27 +113,27 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 .no-webp #img-two {
-    background-image: url('../img/backgrounds/cupcake-bg-1.jpg');
+    background-image: url("../img/backgrounds/cupcake-bg-1.jpg");
 }
 
 .webp #img-two {
-    background-image: url('../img/backgrounds/cupcake-bg-1.webp');
+    background-image: url("../img/backgrounds/cupcake-bg-1.webp");
 }
 
 .no-webp #img-three {
-    background-image: url('../img/backgrounds/cupcake-bg-2.jpg');
+    background-image: url("../img/backgrounds/cupcake-bg-2.jpg");
 }
 
 .webp #img-three {
-background-image: url('../img/backgrounds/cupcake-bg-2.webp');
+    background-image: url("../img/backgrounds/cupcake-bg-2.webp");
 }
 
 .no-webp #img-four {
-    background-image: url('../img/backgrounds/cupcake-bg-4.jpg');
+    background-image: url("../img/backgrounds/cupcake-bg-4.jpg");
 }
 
 .webp #img-four {
-    background-image: url('../img/backgrounds/cupcake-bg-4.webp');
+    background-image: url("../img/backgrounds/cupcake-bg-4.webp");
 }
 
 #footer-outer {
@@ -175,14 +174,29 @@ background-image: url('../img/backgrounds/cupcake-bg-2.webp');
     -webkit-column-width: max-content;
 }
 
+#map {
+    max-width: 64vh;
+    margin: 0 auto;
+}
+
 /* Mobile screen fix */
 @media only screen and (max-device-width: 1366px) {
     .bg-div {
         background-attachment: scroll;
     }
+
+    #map {
+        max-width: 90%;
+    }
+
+    .inner-div, #div-one-inner {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
 }
+
 @media only screen and (min-device-width: 1366px) {
-    .inner-div, #div-one-inner{
+    .inner-div, #div-one-inner {
         padding-left: 7vh;
         padding-right: 7vh;
     }
